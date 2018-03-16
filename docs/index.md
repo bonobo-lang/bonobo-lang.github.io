@@ -1,17 +1,31 @@
-# Welcome to MkDocs
+# Home
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+Bonobo is a strongly-typed, intuitive language that compiles
+to ANSI C. Bonobo has a very clean, concise syntax, and it's
+very **easy to learn**, thanks to its powerful static analyzer.
 
-## Commands
+Bonobo can be used as a general-purpose language, but is
+primarily targeted at web servers, fintech, and other
+systems that need **performant**, **reliable** software.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+## A Quick Look
 
-## Project layout
+```bonobo
+// No parentheses when not necessary.
+f main => print 'Hello, world!'
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+// The type system prevents critical runtime bugs.
+f square (x: Num): Num => x * x
+
+// Return types can be inferred, so you usually
+// don't need to type them.
+f avg (a: Num, b: Num) => (a + b) / 2
+
+// This code:
+f five => avg 0, 10
+
+// Is the same as this:
+f alsoFive => avg(0, 10)
+```
+
+That being said, [let's dive in](installing.md)!
