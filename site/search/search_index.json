@@ -1,0 +1,39 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Home\n\n\nBonobo is a strongly-typed, intuitive language that compiles\nto ANSI C. Bonobo has a very clean, concise syntax, and it's\nvery \neasy to learn\n, thanks to its powerful static analyzer.\n\n\nBonobo can be used as a general-purpose language, but is\nprimarily targeted at web servers, fintech, and other\nsystems that need \nperformant\n, \nreliable\n software.\n\n\nA Quick Look\n\n\n// Obligatory entry-level program. :)\nfn main =\n print ('Hello, world!')\n\n// The type system prevents critical runtime bugs.\nfn square (x: Int): Int =\n x * x\n\n// Return types can be inferred, so you usually\n// don't need to type them.\nfn avg (a: Int, b: Int) =\n (a + b) / 2\n\n// This code:\nfn five =\n avg 0, 10\n\n// Is the same as this:\nfn alsoFive =\n avg(0, 10)\n\n\n\n\nThat being said, \nlet's dive in\n!", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#home", 
+            "text": "Bonobo is a strongly-typed, intuitive language that compiles\nto ANSI C. Bonobo has a very clean, concise syntax, and it's\nvery  easy to learn , thanks to its powerful static analyzer.  Bonobo can be used as a general-purpose language, but is\nprimarily targeted at web servers, fintech, and other\nsystems that need  performant ,  reliable  software.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#a-quick-look", 
+            "text": "// Obligatory entry-level program. :)\nfn main =  print ('Hello, world!')\n\n// The type system prevents critical runtime bugs.\nfn square (x: Int): Int =  x * x\n\n// Return types can be inferred, so you usually\n// don't need to type them.\nfn avg (a: Int, b: Int) =  (a + b) / 2\n\n// This code:\nfn five =  avg 0, 10\n\n// Is the same as this:\nfn alsoFive =  avg(0, 10)  That being said,  let's dive in !", 
+            "title": "A Quick Look"
+        }, 
+        {
+            "location": "/installing/", 
+            "text": "Installing Bonobo\n\n\nThe Bonobo toolchain is written in \nDart\n,\nand includes everything you need to build applications productively.\n\n\nGetting the Toolchain\n\n\n\n\nMake sure that the \nDart SDK\n installed, and in your \nPATH\n.\n\n\nInstall the toolchain by running \npub global activate --source git https://github.com/bonobo-lang/bonobo.git\n.\n\n\nThe toolchain will now be available in your system as \nbonobo\n.\n\n\n\n\nAvailable Commands\n\n\nRun \nbonobo help\n for a full list of available toolchain commands.\nThe following are some you might use very often:\n\n\n\n\nbonobo compile\n - Verifies and compiles a Bonobo program to C. \n\n\nbonobo info\n - Dump information about the current module.\n\n\nbonobo language_server\n - Runs a \nLanguage Server Protocol\n analysis server.\n\n\nbonobo doc\n - Generates documentation for a Bonobo module.\n\n\nbonobo format\n - Formats a document of Bonobo code according to opinionated guidelines.", 
+            "title": "Installing Bonobo"
+        }, 
+        {
+            "location": "/installing/#installing-bonobo", 
+            "text": "The Bonobo toolchain is written in  Dart ,\nand includes everything you need to build applications productively.", 
+            "title": "Installing Bonobo"
+        }, 
+        {
+            "location": "/installing/#getting-the-toolchain", 
+            "text": "Make sure that the  Dart SDK  installed, and in your  PATH .  Install the toolchain by running  pub global activate --source git https://github.com/bonobo-lang/bonobo.git .  The toolchain will now be available in your system as  bonobo .", 
+            "title": "Getting the Toolchain"
+        }, 
+        {
+            "location": "/installing/#available-commands", 
+            "text": "Run  bonobo help  for a full list of available toolchain commands.\nThe following are some you might use very often:   bonobo compile  - Verifies and compiles a Bonobo program to C.   bonobo info  - Dump information about the current module.  bonobo language_server  - Runs a  Language Server Protocol  analysis server.  bonobo doc  - Generates documentation for a Bonobo module.  bonobo format  - Formats a document of Bonobo code according to opinionated guidelines.", 
+            "title": "Available Commands"
+        }
+    ]
+}

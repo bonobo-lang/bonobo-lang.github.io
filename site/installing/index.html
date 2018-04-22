@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <head>
@@ -27,20 +31,20 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="./assets/images/favicon.png">
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.0">
     
     
       
-        <title>Bonobo</title>
+        <title>Installing Bonobo - Bonobo</title>
       
     
     
-      <link rel="stylesheet" href="./assets/stylesheets/application.78aab2dc.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.78aab2dc.css">
       
     
     
-      <script src="./assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -66,7 +70,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#home" tabindex="1" class="md-skip">
+      <a href="#installing-bonobo" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -75,7 +79,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="." title="Bonobo" class="md-header-nav__button md-logo">
+        <a href=".." title="Bonobo" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -92,7 +96,7 @@
                 Bonobo
               </span>
               <span class="md-header-nav__topic">
-                Home
+                Installing Bonobo
               </span>
             
           
@@ -161,6 +165,18 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
@@ -172,11 +188,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Home
+        Installing Bonobo
       </label>
     
-    <a href="." title="Home" class="md-nav__link md-nav__link--active">
-      Home
+    <a href="./" title="Installing Bonobo" class="md-nav__link md-nav__link--active">
+      Installing Bonobo
     </a>
     
       
@@ -190,8 +206,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#a-quick-look" title="A Quick Look" class="md-nav__link">
-    A Quick Look
+  <a href="#getting-the-toolchain" title="Getting the Toolchain" class="md-nav__link">
+    Getting the Toolchain
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#available-commands" title="Available Commands" class="md-nav__link">
+    Available Commands
   </a>
   
 </li>
@@ -204,18 +227,6 @@
   
 </nav>
     
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="installing/" title="Installing" class="md-nav__link">
-      Installing
-    </a>
   </li>
 
     
@@ -240,8 +251,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#a-quick-look" title="A Quick Look" class="md-nav__link">
-    A Quick Look
+  <a href="#getting-the-toolchain" title="Getting the Toolchain" class="md-nav__link">
+    Getting the Toolchain
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#available-commands" title="Available Commands" class="md-nav__link">
+    Available Commands
   </a>
   
 </li>
@@ -263,32 +281,25 @@
               
                 
                 
-                <h1 id="home">Home</h1>
-<p>Bonobo is a strongly-typed, intuitive language that compiles
-to ANSI C. Bonobo has a very clean, concise syntax, and it's
-very <strong>easy to learn</strong>, thanks to its powerful static analyzer.</p>
-<p>Bonobo can be used as a general-purpose language, but is
-primarily targeted at web servers, fintech, and other
-systems that need <strong>performant</strong>, <strong>reliable</strong> software.</p>
-<h2 id="a-quick-look">A Quick Look</h2>
-<pre><code class="bonobo">// Obligatory entry-level program. :)
-fn main =&gt; print ('Hello, world!')
-
-// The type system prevents critical runtime bugs.
-fn square (x: Int): Int =&gt; x * x
-
-// Return types can be inferred, so you usually
-// don't need to type them.
-fn avg (a: Int, b: Int) =&gt; (a + b) / 2
-
-// This code:
-fn five =&gt; avg 0, 10
-
-// Is the same as this:
-fn alsoFive =&gt; avg(0, 10)
-</code></pre>
-
-<p>That being said, <a href="installing/">let's dive in</a>!</p>
+                <h1 id="installing-bonobo">Installing Bonobo</h1>
+<p>The Bonobo toolchain is written in <a href="https://dartlang.org">Dart</a>,
+and includes everything you need to build applications productively.</p>
+<h2 id="getting-the-toolchain">Getting the Toolchain</h2>
+<ol>
+<li>Make sure that the <a href="https://dartlang.org/install">Dart SDK</a> installed, and in your <code>PATH</code>.</li>
+<li>Install the toolchain by running <code>pub global activate --source git https://github.com/bonobo-lang/bonobo.git</code>.</li>
+<li>The toolchain will now be available in your system as <code>bonobo</code>.</li>
+</ol>
+<h2 id="available-commands">Available Commands</h2>
+<p>Run <code>bonobo help</code> for a full list of available toolchain commands.
+The following are some you might use very often:</p>
+<ul>
+<li><code>bonobo compile</code> - Verifies and compiles a Bonobo program to C. </li>
+<li><code>bonobo info</code> - Dump information about the current module.</li>
+<li><code>bonobo language_server</code> - Runs a <a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol</a> analysis server.</li>
+<li><code>bonobo doc</code> - Generates documentation for a Bonobo module.</li>
+<li><code>bonobo format</code> - Formats a document of Bonobo code according to opinionated guidelines.</li>
+</ul>
                 
                   
                 
@@ -307,20 +318,20 @@ fn alsoFive =&gt; avg(0, 10)
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-        
-          <a href="installing/" title="Installing" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
-                  Next
+                  Previous
                 </span>
-                Installing
+                Home
               </span>
             </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
           </a>
+        
         
       </nav>
     </div>
@@ -344,9 +355,9 @@ fn alsoFive =&gt; avg(0, 10)
       
     </div>
     
-      <script src="./assets/javascripts/application.8eb9be28.js"></script>
+      <script src="../assets/javascripts/application.8eb9be28.js"></script>
       
-      <script>app.initialize({version:"0.17.3",url:{base:"."}})</script>
+      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
       
     
     
