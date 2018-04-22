@@ -12,6 +12,7 @@ Run `bonobo help` for a full list of available toolchain commands.
 The following are some you might use very often:
 
 * `bonobo compile` - Verifies and compiles a Bonobo program to C. 
+* `bonobo info` - Dump information about the current module.
 * `bonobo language_server` - Runs a [Language Server Protocol](https://microsoft.github.io/language-server-protocol/) analysis server.
-* `bonobo document` - Generates documentation for a Bonobo library.
+* `bonobo doc` - Generates documentation for a Bonobo module.
 * `bonobo format` - Formats a document of Bonobo code according to opinionated guidelines.
